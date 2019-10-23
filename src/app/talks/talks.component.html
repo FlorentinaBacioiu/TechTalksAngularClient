@@ -1,0 +1,19 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Agenda</mat-card-title>
+  </mat-card-header>
+</mat-card>
+
+<mat-expansion-panel *ngFor="let talk of talks" style="font-size: 15px;">
+  <mat-expansion-panel-header>
+    <mat-panel-title style="font-size: 20px; color: #000099;">
+      {{talk.title}}
+    </mat-panel-title>
+    <mat-panel-description>
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  {{ talk.description }}
+
+</mat-expansion-panel>
